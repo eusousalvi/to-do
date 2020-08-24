@@ -1,7 +1,7 @@
 const form = document.getElementById('form');
 const main = document.getElementById('main');
 
-const storageID = localStorage;
+const storageID = sessionStorage;
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
