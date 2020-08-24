@@ -12,7 +12,9 @@ form.addEventListener('submit', (event) => {
 });
 
 function storeID() {
-  let count = storageID.getItem('lastID') ? storageID.getItem('lastID') : 0;
+  let count = storageID.getItem('lastID')
+    ? parseInt(storageID.getItem('lastID'))
+    : 0;
   storageID.setItem('lastID', ++count);
   return storageID.getItem('lastID');
 }
